@@ -10,15 +10,15 @@
                 background-color: #f4f4f4;
                 overflow-y: auto;
             }
-            .box {
-                padding: 20px;
-                border: 3px solid #0d0d0d;
+            .box1 {
+                padding: 10px;
                 background-color: #0d0d0d;
                 position: relative;
             }
-            .nav {
-                border: 3px solid #0d0d0d;
-                background-color: #0d0d0d;
+
+            .box2 {
+                padding: 10px;
+                background-color: rgb(255, 70, 85);
                 position: relative;
             }
     
@@ -33,7 +33,6 @@
             }
             .pdd {
                 text-align: center; 
-                margin-bottom: 0px;
                 font-size: 60px;
                 font-weight: bold;
                 font-family: Copperplate, Fantasy;
@@ -47,8 +46,8 @@
             /* Search bar */
             .search-bar {
                 position: absolute;
-                top: 40px;
-                right: 25px;
+                top: 20x;
+                right: 50px;
                 display: flex;
                 align-items: center;
             }
@@ -60,7 +59,7 @@
             .search-bar-icon {
                 width: 20px;
                 height: auto;
-                margin-left: 7px;
+                margin-left: 9px;
             }
             
             /* Nav */
@@ -247,7 +246,12 @@
                 background-color: transparent;
                 transition-duration: 0.3s;
             }
-            aside .left .title:hover {
+            .title:hover {
+                mark {
+                    color: rgb(255, 70, 85);
+                    background-color: transparent;
+                    transition-duration: 0.3s;
+                }
                 color: rgb(255, 70, 85);
                 background-color: transparent;
                 transition-duration: 0.3s;
@@ -256,9 +260,8 @@
                 color: rgb(15, 25, 35);
                 font-size: 13px;
                 font-family: Tahoma, sans-serif;
-                font-weight: 600;
+                font-weight: 520;
                 letter-spacing: 1px;
-                padding-right: 10px;
             }
             .left .description:hover, .header:hover {
                 color: rgb(255, 70, 85);
@@ -300,29 +303,34 @@
         </style>
     </head>
     <body>
-        <!-- Header + Search bar-->
-        <header class="box">
-            <h1 class="pdd">PDD News</h1>
-            <div class="icon-container">
-                <img class="icon" src="icon.jpg" alt="PDD News Logo">
-            </div>
-            <div class="search-bar">
-                <input type="text" placeholder="Search.." aria-label="Search">
-                <img class="search-bar-icon" src="https://www.pngall.com/wp-content/uploads/13/Search-Button-White-PNG.png" alt="Search icon">
-            </div>
-        </header>
+        <!-- Header-->
+        <header>
+            <section class="box1">
+                <h1 class="pdd">PDD News</h1>
+                <div class="icon-container">
+                    <img class="icon" src="icon.jpg" alt="PDD News Logo">
+                </div>
+            </section>
+            <section class="box2">
+                <!-- Search bar -->
+                <div class="search-bar">
+                    <input type="text" placeholder="Search.." aria-label="Search">
+                    <img class="search-bar-icon" src="https://www.pngall.com/wp-content/uploads/13/Search-Button-White-PNG.png" alt="Search icon">
+                </div>
 
-        <!-- Nav -->
-        <nav class="box">
-            <div class="nav-h">
-                <ul class="nav-ul">
-                    <li><a class="nav-a" id="nav-active1" href="#">Home</a></li>
-                    <li><a class="nav-a" href="#">Merchandise</a></li>
-                    <li><a class="nav-a" href="#">About</a></li>
-                    <li><a class="nav-a" href="#">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+                <!-- Nav -->
+                <nav>
+                    <div class="nav-h">
+                        <ul class="nav-ul">
+                            <li><a class="nav-a" id="nav-active1" href="#">Home</a></li>
+                            <li><a class="nav-a" href="#">Merchandise</a></li>
+                            <li><a class="nav-a" href="#">About</a></li>
+                            <li><a class="nav-a" href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </section>    
+        </header>
 
         <!-- Section -->
         <section class = section>
